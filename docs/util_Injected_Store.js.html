@@ -260,7 +260,7 @@ exports.ExposeStore &#x3D; () &#x3D;&gt; {
 
     window.injectToFunction({ module: &#x27;WAWebE2EProtoUtils&#x27;, function: &#x27;typeAttributeFromProtobuf&#x27; }, (func, ...args) &#x3D;&gt; { const [proto] &#x3D; args; return proto.locationMessage || proto.groupInviteMessage ? &#x27;text&#x27; : func(...args); });
 
-    window.injectToFunction({ module: &#x27;WAWebLid1X1MigrationGating&#x27;, function: &#x27;Lid1X1MigrationUtils.isLidMigrated&#x27; }, () &#x3D;&gt; false);
+    window.injectToFunction({ module: &#x27;WAWebLid1X1MigrationGating&#x27;, function: &#x27;Lid1X1MigrationUtils.isLidMigrated&#x27; }, () &#x3D;&gt; true);
 };
 </code></pre>
           </article>
